@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Nepal Redcross Society, Kaski Chapter",
   description: "NRCS Kaski Documentation",
-  base:'./',
+  base:'/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

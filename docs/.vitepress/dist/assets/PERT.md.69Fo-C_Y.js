@@ -1,7 +1,0 @@
-import{_ as t,c as a,o,ae as r}from"./chunks/framework.CzUulAZT.js";const u=JSON.parse('{"title":"PERT Calculation","description":"","frontmatter":{},"headers":[],"relativePath":"PERT.md","filePath":"PERT.md"}'),p={name:"PERT.md"};function i(s,e,n,l,c,d){return o(),a("div",null,[...e[0]||(e[0]=[r(`<h1 id="pert-calculation" tabindex="-1">PERT Calculation <a class="header-anchor" href="#pert-calculation" aria-label="Permalink to &quot;PERT Calculation&quot;">​</a></h1><h3 id="pert-formula" tabindex="-1">PERT Formula: <a class="header-anchor" href="#pert-formula" aria-label="Permalink to &quot;PERT Formula:&quot;">​</a></h3><p>Expected Time = (O + 4M + P/ 6)</p><p>WHERE,</p><p>O = Optimistic Time</p><p>M = Most likely time</p><p>P = Pessimistic Time</p><p>So, here as we are working on aglie methodology the tasks can be done simultaneously. Weekly,</p><p>Optimistic (O): 30 hours/ sprint</p><p>Most likely (M): 42 hours/ sprint</p><p>Pessimistic (P) : 49 hours/ sprint</p><p>Expected Time</p><pre><code>= (30+ 4*42 + 49)\\6
-
-= 41.16 hours / sprint
-</code></pre><p>In total there are 7 sprints, so Expected time for whole project</p><pre><code>= 41.16 * 5
-                         
-= 205.8 hours 
-</code></pre><p>Start of project : November 16, 2025</p><p>End of project : December 19 , 2025 (Expected) which is around 29/ 30 working days in total.</p>`,17)])])}const h=t(p,[["render",i]]);export{u as __pageData,h as default};
