@@ -16,31 +16,30 @@ As a staff/ admin, I want to create and manage blood donation events so that don
 As a staff, I want to register donors during or after an event so their personal and donation details are recorded. 
 
 #### Acceptance Criteria 
-- Donor form collects name, age, gender, blood group, contact, address, donor type (new/ existing).
-- Donation details include bag number, collection time, volume, remarks.
+- Donor form collects name, age, gender, RHO, contact, address, donor type (new/ existing).
+- Donation details include all donor form details and others like donor no, bag number, collection time, volume, remarks.
 - System prevents duplicate bag numbers.
 - Successful creation shows the donor under the selected event donation list.
 
-### 3. Laboratory Screening and Blood Test Entry
+### 3. Serology 
 #### User Story
 As a lab technician/ staff, I want to enter blood test results so that safe and unsafe blood can be categorized.
 
 #### Acceptance Criteria
-- Tests include HIV I & II
-, HBsAg, HCV, VDRL with pass/ fail results.
+- Tests include HIV I & II, HBsAg, HCV, VDRL with pass/ fail results.
 - Marking failed immediately flags blood bag as Rejected and it is removed or thrown away.
 - Marking Passed, results into the next phase that is component separation.
 
 
 ### 4. Component Separation
 #### User Story
-As a technician, I want to searate blood into components so that Plasma/ PRBC/ Platelets can be stored and issued independently.
+As a technician, I want to searate blood into components so that separated components can be stored and issued independently.
 
 #### Acceptance Criteria 
-- Components incude PRBC, FFP, Platelets, Whole Blood.
+- Components incude PRP, FFP, PRBC With SAGM(PRBC Sagm), Whole Divide(W.B. Divide), Prp Divide(PRP Divide), PRBC(PRBC), Cryo, Platelets Conc, Buffy Coat, Poor Plasma, Washed Cell.
 - Each has bag code + expiry date + storage type.
-- Failed or expired units automatically chage status to Not usable.
-- Component separation record links back to original bag number.
+- Failed or expired units automatically change status to Expired.
+- Component separation record links component ID to the bag number.
 
 
 ### 5. Stock Inventory 
@@ -64,7 +63,7 @@ As medical staff, I want to cross-match blood units with a patient request so th
 
 ### 7. Blood Issue / Hospital Transfer
 #### User Story
-As a satff member, I want to issue blood to hospitals or patients so that blood movement can be tracked.
+As a staff member, I want to issue blood to hospitals or patients so that blood movement can be tracked.
 
 #### Acceptance Criteria
 - Once issued, stock quantity must decrease automatically.
@@ -76,10 +75,10 @@ As a satff member, I want to issue blood to hospitals or patients so that blood 
 As a staff, I want to generate invoices from blood issues so that payments can be tracked.
 
 #### Acceptance Criteria
-- Billing Template defines charges per blood component
-- Invoice contains bill number, recipient/ hospital, components isuued, quantity, rate, total.
+- Billing Template defines cross match, Blood bag, Blood grouping, HIV Test, HBSAG Test, VDRL Test, and HCV Test.
+- Invoice contains bill number, recipient/ hospital, quantity, rate, total.
+- Invoice includes patient detail (name, age, address, contact), hospital type, id number, quantity and billing template pricing details. 
 - Invoice PDF can be generated and printed.
-- Bill status includes Paid/ Unpaid/ Pending.
 
 ### 9. Reporting & Analytics
 #### User Story
